@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="full stack developer, web, frontend, backend, javascript, python, html, css, react, django, flask, godot">
+    <meta name="description" content="Sarah Collins is a full-stack web developer.">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+    <title>SJECollins | Projects</title>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="./">
+            <img src="assets/images/logo.webp" alt="logo">
+            <h1>SJECollins</h1>
+        </a>
+        <h1 class="current-page">Projects</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./projects" class="here">Projects</a></li>
+                <li><a href="./contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="center-content">
+        <aside class="left-side">
+            <div id="toggle-left">
+                &lsaquo;
+            </div>
+            <div id="side-nav">
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./projects" class="here">Projects</a></li>
+                    <li><a href="./contact">Contact</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <button id="toggle-display">Gallery View</button>
+            <div id="slide-view">
+            <div>
+                <button id="chevron-up">PREV</button>
+            </div>
+            <section class="project">
+                <div id="project-top">
+                    <h2 id="project-title">Project 1</h2>
+                    <div id="project-links">
+                        <a id="github-link" target="_blank" rel="noreferrer noopener" href="">GitHub Repo</a>
+                        <a id="live-link" target="_blank" rel="noreferrer noopener" href="">Live Site</a>
+                    </div>
+                </div>
+                <div id="images">
+                    <button id="chevron-left">&lsaquo;</button>
+                    <img src="#" alt="placeholder" id="project-image">
+                    <button id="chevron-right">&rsaquo;</button>
+                </div>
+                <div id="tech-info">
+                    <p>Built with: <span id="tech">tech that built the project.</span></p>
+                </div>
+                <div>
+                    <p id="project-description">Description of project</p>
+                </div>
+            </section>
+            <div>
+                <button id="chevron-down">NEXT</button>
+            </div>
+            </div>
+            <div id="gallery-view" style="display: none;">
+                <div id="projects-grid">
+                <!-- Will be populated by JS -->
+                </div>
+            </div>
+        </main>
+        <aside class="right-side">
+            <div id="toggle-right" class="on-right">
+                &rsaquo;
+            </div>
+            <div id="project-nav">
+                <ul>
+                    <!-- populated by JS -->
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; 2025 SJECollins</p>
+    </footer>
+    <script src="assets/js/navscript.js"></script>
+    <script src="assets/js/projects.js"></script>
+    <script src="assets/js/projectscript.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+</body>
+
+</html>

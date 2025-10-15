@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="full stack developer, web, frontend, backend, javascript, python, html, css, react, django, flask">
+    <meta name="description" content="Sarah Collins is a full-stack web developer.">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('-B0nzfYoYvL-PUltb');
+        })();
+    </script>
+    <title>SJECollins | Contact</title>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="./">
+            <img src="assets/images/logo.webp" alt="logo">
+            <h1>SJECollins</h1>
+        </a>
+        <h1 class="current-page">Contact</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./projects">Projects</a></li>
+                <li><a href="./contact" class="here">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="center-content">
+        <aside class="left-side">
+            <div id="toggle-left">
+                &lsaquo;
+            </div>
+            <div id="side-nav">
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./projects">Projects</a></li>
+                    <li><a href="./contact" class="here">Contact</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main>
+            <section class="contact">
+                <h2 hidden>Contact</h2>
+
+                <div id="show-form">
+                    <p>You can send me a message below:</p>
+                    <form method="POST" id="contact-form">
+                        <div id="form-fields">
+                            <div>
+                                <label for="name">Name:</label>
+                                <input type="text" name="contact_name" id="name" placeholder="Your name" required>
+                                <label for="email">Email:</label>
+                                <input type="email" name="contact_email" id="email" placeholder="Your email" required>
+                            </div>
+                            <div>
+                                <label for="message">Message:</label>
+                                <textarea name="message" id="message" cols="30" rows="5" placeholder="Your message"
+                                    required></textarea>
+                            </div>
+                        </div>
+                        <input id="send-btn" type="submit" value="Send">
+                    </form>
+                </div>
+                <div id="show-message">
+                </div>
+                <p>My <a href="https://www.github.com/SJECollins/" class="here">GitHub</a>.</p>
+                <p>My <a href="https://www.linkedin.com/in/sjecollins/" class="here">LinkedIn</a>.</p>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 SJECollins</p>
+    </footer>
+    <script src="assets/js/navscript.js"></script>
+    <script src="assets/js/sendemail.js"></script>
+</body>
+
+</html>
